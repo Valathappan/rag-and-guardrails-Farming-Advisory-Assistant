@@ -1,4 +1,4 @@
-from fitness_agent.rag.models import RetrievedChunk
+from farm_advisory_assistant.rag.models import RetrievedChunk
 
 
 def build_context(chunks: list[RetrievedChunk]) -> str:

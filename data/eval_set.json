@@ -1,0 +1,175 @@
+[
+  {
+    "question": "What depth should I plant corn seed and how many plants per acre?",
+    "relevant": {
+      "Crop_Care_Guide_US.pdf-p4-c1": 2,
+      "Crop_Care_Guide_US.pdf-p4-c0": 2,
+      "Agronomy-Manual.pdf-p23-c0": 1,
+      "Agronomy-Manual.pdf-p23-c1": 1,
+      "R0006_New-Crop-Production-Handbook-USA.pdf-p117-c1": 1,
+      "AGRICULTURE-Tamilnadu.pdf-p119-c2": 1,
+      "Northeast-Crop-Production-Manual.pdf-p51-c0": 1
+    }
+  },
+  {
+    "question": "Which irrigation method uses water most efficiently?",
+    "relevant": {
+      "Crop_Care_Guide_US.pdf-p5-c0": 2,
+      "farmerbook.pdf-p26-c0": 2,
+      "farmerbook.pdf-p26-c1": 2,
+      "AGRICULTURE-Tamilnadu.pdf-p412-c0": 1
+    }
+  },
+  {
+    "question": "What do the three numbers like 10-10-10 on a fertiliser bag mean?",
+    "relevant": {
+      "Fertiliser_Guide_US.pdf-p3-c1": 2,
+      "Fertiliser_Guide_US.pdf-p5-c0": 1
+    }
+  },
+  {
+    "question": "How many soil cores should I take when collecting a soil sample?",
+    "relevant": {
+      "Fertiliser_Guide_US.pdf-p4-c0": 2,
+      "Agronomy-Manual.pdf-p8-c0": 2,
+      "Agronomy-Manual.pdf-p8-c1": 2,
+      "farmerbook.pdf-p52-c0": 1
+    }
+  },
+  {
+    "question": "My crop has purple or reddish leaves, what nutrient is missing?",
+    "relevant": {
+      "Fertiliser_Guide_US.pdf-p7-c0": 2,
+      "R0006_New-Crop-Production-Handbook-USA.pdf-p16-c1": 2,
+      "farmerbook.pdf-p45-c0": 2,
+      "AGRICULTURE-Tamilnadu.pdf-p119-c0": 2,
+      "Northeast-Crop-Production-Manual.pdf-p24-c0": 1,
+      "R0006_New-Crop-Production-Handbook-USA.pdf-p334-c0": 1
+    }
+  },
+  {
+    "question": "What are the 4R principles of nutrient stewardship?",
+    "relevant": {
+      "Fertiliser_Guide_US.pdf-p7-c1": 2,
+      "Fertiliser_Guide_US.pdf-p7-c0": 1
+    }
+  },
+  {
+    "question": "When is the last spring frost in USDA zone 6?",
+    "relevant": {
+      "Sowing_Seasons_Guide_US.pdf-p4-c0": 2
+    }
+  },
+  {
+    "question": "What soil temperature do peppers need before planting?",
+    "relevant": {
+      "Sowing_Seasons_Guide_US.pdf-p7-c0": 2,
+      "Sowing_Seasons_Guide_US.pdf-p4-c1": 2
+    }
+  },
+  {
+    "question": "How long after the last frost should I transplant tomatoes?",
+    "relevant": {
+      "Sowing_Seasons_Guide_US.pdf-p5-c1": 2,
+      "Sowing_Seasons_Guide_US.pdf-p5-c0": 1
+    }
+  },
+  {
+    "question": "How can I protect bees when spraying insecticides?",
+    "relevant": {
+      "Pests_Guide_US.pdf-p7-c0": 2,
+      "Pests_Guide_US.pdf-p6-c1": 1,
+      "Northeast-Crop-Production-Manual.pdf-p13-c1": 2,
+      "Northeast-Crop-Production-Manual.pdf-p13-c2": 2,
+      "Northeast-Crop-Production-Manual.pdf-p67-c2": 2,
+      "Northeast-Crop-Production-Manual.pdf-p81-c0": 2,
+      "Northeast-Crop-Production-Manual.pdf-p101-c2": 2,
+      "Northeast-Crop-Production-Manual.pdf-p64-c3": 2,
+      "Northeast-Crop-Production-Manual.pdf-p52-c2": 2
+    }
+  },
+  {
+    "question": "What is an economic threshold in pest management?",
+    "relevant": {
+      "Pests_Guide_US.pdf-p3-c1": 2,
+      "farmerbook.pdf-p82-c0": 2,
+      "Pests_Guide_US.pdf-p3-c2": 1
+    }
+  },
+  {
+    "question": "Which beneficial insects eat aphids?",
+    "relevant": {
+      "Pests_Guide_US.pdf-p6-c1": 2,
+      "farmerbook.pdf-p81-c1": 2,
+      "AGRICULTURE-Tamilnadu.pdf-p317-c2": 2,
+      "AGRICULTURE-Tamilnadu.pdf-p311-c1": 2,
+      "farmerbook.pdf-p81-c0": 1,
+      "AGRICULTURE-Tamilnadu.pdf-p283-c0": 1,
+      "Agronomy-Manual.pdf-p44-c1": 1,
+      "Agronomy-Manual.pdf-p44-c2": 1
+    }
+  },
+  {
+    "question": "Why should I not plant potatoes after tomatoes?",
+    "relevant": {
+      "Crop_Care_Guide_US.pdf-p5-c1": 2,
+      "R0006_New-Crop-Production-Handbook-USA.pdf-p54-c0": 1
+    }
+  },
+  {
+    "question": "How do I manage herbicide-resistant weeds like Palmer amaranth?",
+    "relevant": {
+      "Pests_Guide_US.pdf-p5-c0": 2,
+      "Pests_Guide_US.pdf-p5-c1": 2,
+      "Crop_Care_Guide_US.pdf-p6-c1": 1,
+      "Crop_Care_Guide_US.pdf-p6-c0": 1
+    }
+  },
+  {
+    "question": "Which paddy varieties are recommended for the Kuruvai season in Thanjavur?",
+    "relevant": {
+      "AGRICULTURE-Tamilnadu.pdf-p13-c0": 2,
+      "AGRICULTURE-Tamilnadu.pdf-p17-c0": 1,
+      "AGRICULTURE-Tamilnadu.pdf-p17-c1": 1,
+      "AGRICULTURE-Tamilnadu.pdf-p43-c0": 1
+    }
+  },
+  {
+    "question": "How do I prevent false smut in samba season rice?",
+    "relevant": {
+      "AGRICULTURE-Tamilnadu.pdf-p72-c1": 2,
+      "AGRICULTURE-Tamilnadu.pdf-p17-c0": 1,
+      "AGRICULTURE-Tamilnadu.pdf-p17-c1": 1,
+      "farmerbook.pdf-p93-c0": 1
+    }
+  },
+  {
+    "question": "How much water does banana need under drip irrigation compared to surface irrigation?",
+    "relevant": {
+      "farmerbook.pdf-p61-c2": 2,
+      "farmerbook.pdf-p62-c0": 2,
+      "AGRICULTURE-Tamilnadu.pdf-p412-c0": 2,
+      "farmerbook.pdf-p25-c0": 1,
+      "AGRICULTURE-Tamilnadu.pdf-p414-c0": 1
+    }
+  },
+  {
+    "question": "How many litres of water per day does a coconut palm need through drip irrigation?",
+    "relevant": {
+      "AGRICULTURE-Tamilnadu.pdf-p239-c0": 2,
+      "AGRICULTURE-Tamilnadu.pdf-p239-c1": 2
+    }
+  },
+  {
+    "question": "What is the economic threshold level for stem borer in rice?",
+    "relevant": {
+      "AGRICULTURE-Tamilnadu.pdf-p63-c1": 2
+    }
+  },
+  {
+    "question": "When should wheat be sown in Tamil Nadu?",
+    "relevant": {
+      "AGRICULTURE-Tamilnadu.pdf-p134-c0": 2
+    }
+  }
+]

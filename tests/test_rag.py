@@ -1,8 +1,8 @@
 import pytest
 
-from fitness_agent.rag.chunker import chunk_pages, split_text
-from fitness_agent.rag.context_builder import build_context
-from fitness_agent.rag.models import Page, RetrievedChunk
+from farm_advisory_assistant.rag.chunker import chunk_pages, split_text
+from farm_advisory_assistant.rag.context_builder import build_context
+from farm_advisory_assistant.rag.models import Page, RetrievedChunk
 
 
 def test_split_text_overlaps_chunks():
@@ -31,13 +31,13 @@ def test_chunk_pages_keeps_source_and_page():
 
 def test_build_context_numbers_chunks_with_sources():
     chunks = [
-        RetrievedChunk(text="Squats build legs.", source="guide.pdf", page=2, distance=0.1),
-        RetrievedChunk(text="Sleep aids recovery.", source="rest.pdf", page=5, distance=0.2),
+        RetrievedChunk(id="AGRICULTURE-Tamilnadu.pdf-p2-c0", text="Sow paddy after the first monsoon rains.", source="AGRICULTURE-Tamilnadu.pdf", page=2, distance=0.1),
+        RetrievedChunk(id="Pests_Guide_US.pdf-p5-c0", text="Rotate crops to reduce pest build-up.", source="Pests_Guide_US.pdf", page=5, distance=0.2),
     ]
 
     context = build_context(chunks)
 
     assert context == (
-        "[1] Source: guide.pdf, page 2\nSquats build legs.\n\n"
-        "[2] Source: rest.pdf, page 5\nSleep aids recovery."
+        "[1] Source: AGRICULTURE-Tamilnadu.pdf, page 2\nSow paddy after the first monsoon rains.\n\n"
+        "[2] Source: Pests_Guide_US.pdf, page 5\nRotate crops to reduce pest build-up."
     )

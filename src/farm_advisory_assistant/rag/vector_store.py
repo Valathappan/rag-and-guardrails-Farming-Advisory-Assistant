@@ -1,6 +1,6 @@
 import chromadb
 
-from fitness_agent.config import settings
+from farm_advisory_assistant.config import settings
 
 
 def get_client():

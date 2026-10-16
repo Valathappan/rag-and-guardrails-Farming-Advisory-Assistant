@@ -1,17 +1,17 @@
-from fitness_agent.agent.state import AgentState
-from fitness_agent.config import settings
-from fitness_agent.guardrails.nlu_guard import check_input_nlu
-from fitness_agent.guardrails.output_guard import check_output
-from fitness_agent.guardrails.regex_guard import check_input_regex
-from fitness_agent.rag.context_builder import build_context
-from fitness_agent.rag.generator import generate_answer
-from fitness_agent.rag.query_rewriter import rewrite_query
-from fitness_agent.rag.retriever import retrieve
+from farm_advisory_assistant.agent.state import AgentState
+from farm_advisory_assistant.config import settings
+from farm_advisory_assistant.guardrails.nlu_guard import check_input_nlu
+from farm_advisory_assistant.guardrails.output_guard import check_output
+from farm_advisory_assistant.guardrails.regex_guard import check_input_regex
+from farm_advisory_assistant.rag.context_builder import build_context
+from farm_advisory_assistant.rag.generator import generate_answer
+from farm_advisory_assistant.rag.query_rewriter import rewrite_query
+from farm_advisory_assistant.rag.retriever import retrieve
 
 REFUSALS = {
-    "regex": "Sorry, I can't process that message. Please remove personal details or instructions to the assistant.",
-    "nlu": "Sorry, I can only help with safe fitness, exercise and nutrition questions.",
-    "output": "Sorry, I couldn't find a reliable answer to that in my fitness documents.",
+    "regex": "Sorry, I can't process personal or sensitive identifiers, or instructions that try to change how I operate. Please rephrase without them.",
+    "nlu": "Sorry, I can only help with safe, farming-related questions.",
+    "output": "Sorry, I couldn't verify a safe, reliable answer from the available farming sources.",
 }
 
 

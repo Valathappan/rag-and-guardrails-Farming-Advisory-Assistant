@@ -6,11 +6,11 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline, make_pipeline, make_union
 
-from fitness_agent.config import settings
-from fitness_agent.guardrails.result import GuardrailResult
+from farm_advisory_assistant.config import settings
+from farm_advisory_assistant.guardrails.result import GuardrailResult
 
 GUARD_NAME = "nlu"
-ALLOWED_LABEL = "fitness"
+ALLOWED_LABEL = "farming"
 
 
 def load_training_data(path: Path) -> tuple[list[str], list[str]]:
@@ -20,7 +20,7 @@ def load_training_data(path: Path) -> tuple[list[str], list[str]]:
 
 
 def train_classifier(texts: list[str], labels: list[str]) -> Pipeline:
-    # Word features capture meaning; character features keep typos like "protien" recognisable.
+    # Word features capture meaning; character features keep typos like "fertlizer" recognisable.
     features = make_union(
         TfidfVectorizer(ngram_range=(1, 2), sublinear_tf=True),
         TfidfVectorizer(analyzer="char_wb", ngram_range=(2, 5), sublinear_tf=True),

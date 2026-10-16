@@ -3,7 +3,7 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
-from fitness_agent.rag.models import Page
+from farm_advisory_assistant.rag.models import Page
 
 logging.getLogger("pypdf").setLevel(logging.ERROR)
 

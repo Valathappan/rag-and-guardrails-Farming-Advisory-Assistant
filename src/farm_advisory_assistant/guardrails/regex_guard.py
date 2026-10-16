@@ -1,6 +1,6 @@
 import re
 
-from fitness_agent.guardrails.result import GuardrailResult
+from farm_advisory_assistant.guardrails.result import GuardrailResult
 
 GUARD_NAME = "regex"
 MAX_INPUT_LENGTH = 500
@@ -17,6 +17,12 @@ BLOCKED_PATTERNS = {
     "email address": re.compile(r"\b[\w.+-]+@[\w-]+\.[\w.-]+\b"),
     "phone number": re.compile(r"(?<!\d)(\+?\d{1,3}[\s-]?)?\d{10}(?!\d)"),
     "card number": re.compile(r"(?<!\d)(\d{4}[\s-]?){3}\d{4}(?!\d)"),
+    "farm identifier": re.compile(
+        r"\b(?:farm(?:er)?|agri(?:culture)?)[\s_-]*"
+        r"(?:(?:account|registration|beneficiary|policy)[\s_-]*(?:number|no\.?|id|#)|id)"
+        r"\s*[:#-]?\s*[A-Z0-9][A-Z0-9/-]{3,}\b",
+        re.IGNORECASE,
+    ),
 }
 
 

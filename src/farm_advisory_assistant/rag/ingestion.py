@@ -1,5 +1,5 @@
-from fitness_agent.rag.models import Chunk
-from fitness_agent.rag.vector_store import reset_collection
+from farm_advisory_assistant.rag.models import Chunk
+from farm_advisory_assistant.rag.vector_store import reset_collection
 
 
 def store_chunks(chunks: list[Chunk]) -> int:

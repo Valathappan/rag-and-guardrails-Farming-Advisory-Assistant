@@ -3,7 +3,7 @@
 import sys
 from pathlib import Path
 
-# Make the fitness_agent package in src/ importable without installing the project.
+# Make the farm_advisory_assistant package in src/ importable without installing the project.
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import argparse
@@ -12,10 +12,10 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 
-from fitness_agent.config import settings
-from fitness_agent.rag.context_builder import build_context
-from fitness_agent.rag.query_rewriter import rewrite_query
-from fitness_agent.rag.retriever import retrieve
+from farm_advisory_assistant.config import settings
+from farm_advisory_assistant.rag.context_builder import build_context
+from farm_advisory_assistant.rag.query_rewriter import rewrite_query
+from farm_advisory_assistant.rag.retriever import retrieve
 
 console = Console()
 
@@ -34,7 +34,7 @@ def chunk_table(chunks) -> Table:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("question", nargs="?", default="how much protein should i eat to build muscle?")
+    parser.add_argument("question", nargs="?", default="how many days it would take for a tomato plant to start bearing fruit?", help="ask one question and exit")
     parser.add_argument("--top-k", type=int, default=settings.top_k)
     args = parser.parse_args()
 
